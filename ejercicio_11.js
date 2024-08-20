@@ -5,10 +5,10 @@ function averageWord(param) {
   for (let i = 0; i < param.length; i++) {
     const element = param[i]
 
-    if (typeof element === 'number') {
-      sum += element
-    } else if (typeof element === 'string') {
+    if (typeof element === 'string') {
       sum += element.length
+    } else {
+      sum += element
     }
   }
 
