@@ -6,8 +6,6 @@ function average(param) {
     const element = param[i]
     sum += element
   }
-
   return sum / param.length
 }
-
-average(numbers)
+console.log(average(numbers))
