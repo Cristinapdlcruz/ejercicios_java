@@ -2,20 +2,18 @@
 for (let i = 0; i < 10; i++) {
   console.log(i)
 }
-console.log('------------------------')
+
 // 1.2
-for (let i = 0; i < 9; i++) {
-  if (i % 2 === 0) {
+for (let i = 0; i < 10; i++) {
+  if (i % 2 == 0) {
     console.log(i)
   }
 }
-console.log('------------------------')
+
 // 1.3
 for (let i = 0; i < 10; i++) {
-  console.log('Intentando dormir 🐑')
-
-  // última vuelta!
-  if (i === 9) {
+  console.log('intentando dormir 🐑')
+  if (i == 9) {
     console.log('Dormido!')
   }
 }

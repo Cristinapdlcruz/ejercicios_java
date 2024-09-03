@@ -1,15 +1,14 @@
 const avengers = [
-  'IronMan',
   'Hulk',
-  'CaptainAmerica',
   'Thor',
-  'BlackWidow',
-  'CaptainMarvel'
+  'IronMan',
+  'Captain A.',
+  'Spiderman',
+  'Captain M.'
 ]
 
 function findLongestWord(param) {
   let longestWord = param[0]
-
   for (let i = 1; i < param.length; i++) {
     const element = param[i]
 
@@ -17,8 +16,7 @@ function findLongestWord(param) {
       longestWord = element
     }
   }
-
   return longestWord
 }
-const longestAvenger = findLongestWord(avengers)
-console.log(longestAvenger)
+
+console.log(findLongestWord(avengers))

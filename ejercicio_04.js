@@ -1,6 +1,5 @@
 // 1.1
-let avengers = ['IronM', 'Thor', 'Hulk'] //3 lenght
-//posicion--------0--------1--------2
+const avengers = ['HULK', 'SPIDERMAN', 'BLACK PANTHER']
 console.log(avengers[0])
 
 // 1.2
@@ -11,20 +10,22 @@ console.log(avengers[0])
 console.log(avengers.length)
 
 // 1.4
-let rickAndMortyCharacters = ['Rick', 'Jerry']
-console.log(rickAndMortyCharacters)
-
+const rickAndMortyCharacters = ['Rick', 'Beth', 'Jerry']
 rickAndMortyCharacters.push('Morty', 'Summer')
-console.log(`ahora agregamos dos más ${rickAndMortyCharacters}`)
-
-console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]) //enseña el último elemento que es Summer
+console.log(rickAndMortyCharacters)
+console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1])
 
 // 1.5
-rickAndMortyCharacters.pop() // quita a Summer
-console.log(rickAndMortyCharacters) // Rick, Jerry, Morty
-console.log(rickAndMortyCharacters[0]) // posición 0 sigue siendo Rick
-console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1]) // enseña el último elemento que es Morty
+rickAndMortyCharacters.push('Lapiz Lopez')
+console.log(rickAndMortyCharacters)
+rickAndMortyCharacters.pop('Lapiz Lopez')
+console.log(rickAndMortyCharacters)
+
+console.log(rickAndMortyCharacters[0])
+console.log(rickAndMortyCharacters[rickAndMortyCharacters.length - 1])
 
 // 1.6
+rickAndMortyCharacters.push('Lapiz Lopez')
+console.log(rickAndMortyCharacters)
 rickAndMortyCharacters.splice(1, 1)
-console.log(rickAndMortyCharacters) // solo borra a la posición 1 quedaría Rick y Morty
+console.log(rickAndMortyCharacters)
