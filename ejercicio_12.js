@@ -12,17 +12,18 @@ const duplicates = [
   'soda'
 ]
 function removeDuplicates(param) {
-  let uniqueArray = []
-
   for (let i = 0; i < param.length; i++) {
-    const element = param[i]
+    const firstWord = param[i]
 
-    if (uniqueArray.indexOf(element) === -1) {
-      uniqueArray.push(element)
+    for (let j = i + 1; j < param.length; j++) {
+      const nextWord = param[j]
+      if (firstWord === nextWord) {
+        param.splice(j, 1)
+        j--
+      }
     }
   }
-  return uniqueArray
+  console.log(param)
 }
 
-const uniqueArray = removeDuplicates(duplicates)
-console.log(uniqueArray)
+removeDuplicates(duplicates)

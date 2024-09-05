@@ -11,12 +11,11 @@ const nameFinder = [
   'Jessica',
   'Marc'
 ]
-function finderName(array, name) {
-  if (array.includes(name)) {
-    return `${true}, posicion: ${array.indexOf(name)}`
+function finderName(array, element) {
+  if (Array.includes(element)) {
+    return `${true}, posicion: ${array.indexPf(element)}`
   } else {
     return false
   }
 }
-
 console.log(finderName(nameFinder, 'Steve'))
