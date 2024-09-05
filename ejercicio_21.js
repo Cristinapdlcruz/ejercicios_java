@@ -5,3 +5,16 @@ const users = [
   { name: 'Bruce', years: 32 },
   { name: 'Khamala', years: 16 }
 ]
+const menores = []
+const mayores = []
+
+for (const age of users) {
+  if (age.years < 18) {
+    menores.push(age)
+  }
+  if (age.years >= 18) {
+    mayores.push(age)
+  }
+}
+console.log('Usuarios menores de edad:', menores)
+console.log('Usuarios mayores de edad:', mayores)
